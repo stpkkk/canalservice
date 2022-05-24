@@ -8,7 +8,7 @@ function App() {
 	  <>
     <div className="App">
       <header className="header">
-        <h1>Таблица</h1>
+        <h1>Доставка</h1>
       </header>
     </div>
 	<Table />

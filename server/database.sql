@@ -7,3 +7,6 @@ CREATE TABLE delivery (
 	client_name VARCHAR(255),
 	delivery_distance NOT NULL
 );
+
+
+
