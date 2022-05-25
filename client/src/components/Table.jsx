@@ -26,7 +26,43 @@ const Table = () => {
   const currentClient = clients.slice(indexOfFirstClient, indexOfLastClient);
 
   //Change page
-  const paginate = (pageNumber) => setCurrentPage(pageNumber)
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+  //   const variantsOptions = [
+  //     "сортировать по",
+  //     {
+  //       value: "client_name",
+  //       name: "названию",
+  //     },
+  //     {
+  //       value: "quantity",
+  //       name: "количеству",
+  //     },
+  //     {
+  //       value: "distance",
+  //       name: "расстоянию",
+  //     },
+  //   ];
+
+  //   const conditionOptions = [
+  //     "условие",
+  //     {
+  //       value: "equal",
+  //       name: "=",
+  //     },
+  //     {
+  //       value: "contains",
+  //       name: "содержит",
+  //     },
+  //     {
+  //       value: "more",
+  //       name: ">",
+  //     },
+  //     {
+  //       value: "less",
+  //       name: "<",
+  //     },
+  //   ];
 
   return (
     <Fragment>
@@ -43,11 +79,11 @@ const Table = () => {
           <TableRow clients={currentClient} loading={loading} />
         </tbody>
       </table>
-          <Pagination
-            clientsPerPage={clientsPerPage}
-            totalClients={clients.length}
-			paginate={paginate}
-          />
+      <Pagination
+        clientsPerPage={clientsPerPage}
+        totalClients={clients.length}
+        paginate={paginate}
+      />
     </Fragment>
   );
 };
