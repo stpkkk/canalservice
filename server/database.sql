@@ -1,3 +1,11 @@
+CREATE TABLE public.delivery
+(
+    date date NOT NULL,
+    client_name character varying(128) NOT NULL,
+    quantity integer NOT NULL,
+    distance integer NOT NULL
+);
+
 INSERT INTO delivery
 VALUES
 ('2022-03-01', 'Client 1', 1, 51),
@@ -50,8 +58,4 @@ VALUES
 ('2022-04-17', 'Client 47', 12, 108),
 ('2022-04-18', 'Client 48', 12, 101),
 ('2022-04-19', 'Client 49', 12, 100),
-('2022-04-20', 'Client 50', 12, 200),
-
-
-
-
+('2022-04-20', 'Client 50', 12, 200);
